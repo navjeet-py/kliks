@@ -1,0 +1,72 @@
+<link rel="stylesheet" href="../media/css/profile.css">
+<title>{{ profile_user.first_name }} • Kliks</title>
+{% include 'includes/header.html' %}
+
+<div class="intro">
+    <div class="wrapper">
+        <div class="big-profile-pic"
+             style="background: url('{{ profile_pp.pp.url }}');background-size: cover;">
+        </div>
+
+        <div class="intro-text">
+            <div style="display: flex"><span class="intro-name">{{ profile_user.first_name }}</span>
+                {% if self %}
+                    <a class="edit-profile" href="/edit-profile"><span><i class="fas fa-pen"> </i> Edit Profile</span></a>
+                {% endif %}
+                {% if not self %}
+                    {#                <a class="edit-profile" href="/"><span><i class="fas fa-pen"> </i> Edit Profile</span></a></div>#}
+                {% endif %}
+            </div>
+            <p class="insta" href="#"><i class="fas fa-envelope"> </i> &nbsp;
+                {{ profile_user.email }}</p>
+            <p class="bio">{{ profile_user.last_name }}</p>
+        </div>
+    </div>
+</div>
+
+<div class="others">
+
+    <p class="photos">Uploaded Photos ({{ count }})</p>
+    <div class="other-content">
+        <div class="row1">
+            {% for img in col1 %}
+                <a href="/image/{{ img.id }}">
+                    <img src="{{ img.small_img.url }}" alt="">
+                </a>
+            {% endfor %}
+        </div>
+
+        <div class="row2">
+            {% for img in col2 %}
+                <a href="/image/{{ img.id }}">
+                    <img src="{{ img.small_img.url }}" alt="">
+                </a>
+            {% endfor %}
+        </div>
+
+        <div class="row3">
+            {% for img in col3 %}
+                <a href="/image/{{ img.id }}">
+                    <img src="{{ img.small_img.url }}" alt="">
+                </a>
+            {% endfor %}
+        </div>
+
+        <div class="row4">
+            {% for img in col4 %}
+                <a href="/image/{{ img.id }}">
+                    <img src="{{ img.small_img.url }}" alt="">
+                </a>
+            {% endfor %}
+        </div>
+
+        {% if count is 0 %}
+            <p>No pictures uploaded yet</p>
+    {% endif %}
+    </div>
+</div>
+
+
+
+</body>
+</html>

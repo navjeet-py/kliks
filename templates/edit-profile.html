@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="../media/css/edit-profile.css">
+<title>Edit Profile • Kliks</title>
+{% include 'includes/header.html' %}
+
+<div class="wrapper">
+    <p class="header">Update Your Profile</p>
+    <form action="/edit-profile" method="POST" enctype="multipart/form-data" class="updateForm">{% csrf_token %}
+        <div class="profilePic">
+            <p class="title">Avatar</p>
+            <input type="file" name="image">
+        </div>
+        <div class="name">
+            <p>Name</p>
+            <input type="text" name="name" value= "{{ user.first_name }}" >
+        </div>
+        <br>
+        <br>
+        <div class="bio">
+            <p>Short bio</p>
+            <input type="text" name="bio" value= "{{ user.last_name }}">
+        </div>
+        <br>
+        <br>
+        <div class="emailSetting">
+            <div>
+                <input type="checkbox" id="pepe1">
+                <label for="pepe1"> Receive a monthly email with stats about your photos</label>
+            </div>
+            <div>
+                <input type="checkbox" id="pepe2">
+                <label for="pepe2"> Receive photographer related news</label>
+            </div>
+            <div>
+                <input type="checkbox" id="pepe3">
+                <label for="pepe3"> Receive an email when reaching a new milestone</label>
+            </div>
+            <div>
+                <input type="checkbox" id="pepe4">
+                <label for="pepe4"> Receive a newsletter with the best photos on Pexels</label>
+            </div>
+         </div>
+        <button type="submit" name="update">Update Profile</button>
+    </form>
+</div>

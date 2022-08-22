@@ -1,0 +1,50 @@
+
+.head-bg {
+    background: url("../static_imgs/main_bg.jpg") repeat rgba(35,42,52,0.3) center;
+    background-blend-mode: multiply;
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.head-bg h1 {
+    font-size: 45px;
+    color: white;
+    font-family: Roboto, sans-serif;
+    line-height: 60px;
+    padding-bottom: 10px;
+}
+
+.free-stock-photos{
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    /*font-weight: bolder;*/
+    margin-left: 37px;
+}
+
+
+.img {
+    width: 97%;
+    margin: 20px auto 0;
+}
+
+.row1, .row2, .row3, .row4 {
+    /*width: calc(25% - 15px);*/
+    width: 25%;
+    float: left;
+    margin: 0 15px;
+}
+.row1 img, .row2 img, .row3 img, .row4 img{
+    padding-bottom: 20px;
+    width: 100%;
+    max-width: 100%;
+    cursor: pointer;
+}
+.row1 img:hover, .row2 img:hover, .row3 img:hover, .row4 img:hover{
+    opacity: 0.95;
+}

@@ -1,0 +1,263 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input, select {
+    vertical-align: middle;
+}
+
+/*===============================================*/
+/*===============================================*/
+/*===============================================*/
+/*===============================================*/
+body {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.banner {
+    height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+    background: url("../../media/static_imgs/auth_bg.jpg") repeat rgba(0, 0, 0, 0.3) center;
+    background-blend-mode: multiply;
+    background-size: 140%;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+}
+
+.logo img {
+    width: 60px;
+}
+
+.signup {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 50px;
+}
+
+.signup a {
+    text-decoration: none;
+}
+
+.signup a span {
+    font-size: 16px;
+    font-family: "Roboto";
+    color: black;
+    margin-right: 10px;
+    font-weight: bolder;
+}
+
+.signup a button {
+    cursor: pointer;
+    height: 42px;
+    width: 90px;
+    border: none;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: Roboto;
+    border-radius: 4px;
+}
+
+.signup:hover {
+    transform: translateY(-3px);
+    transition: 0.3s all ease;
+}
+
+.login-form {
+    position: absolute;
+    top: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 400px;
+    width: 485px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.login-form .header {
+    font-size: 38px;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 65px;
+    text-align: center;
+    font-weight: 800;
+    padding-bottom: 15px;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.wrapper form input {
+    height: 43px;
+    width: 370px !important;
+    outline: none;
+    padding-left: 20px;
+    border: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    color: #334565;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.wrapper form input::placeholder {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    color: #334565;
+    opacity: 70%;
+}
+
+.wrapper form .mail-pwd input {
+    width: 100%;
+    border: 0.1px solid rgba(0, 0, 0, 0.4);
+}
+
+.wrapper form button {
+    width: 100%;
+    background-color: rgba(7, 27, 77, 1);
+    height: 46px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    font-family: Roboto;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    line-height: 46px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.wrapper form button:hover {
+    color: #071b4d;
+    background-color: white;
+    border: 2px solid #071b4d;
+    font-weight: 600;
+    line-height: 42px;
+}
+
+.pwd-forgot {
+    margin-top: 20px;
+    font-size: 15px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-family: "Roboto";
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.pwd-forgot:hover {
+    color: black;
+}
+
+input:focus {
+    box-shadow: 0 0 0 1px #334565 inset;
+}
+
+.error {
+    color: red;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}

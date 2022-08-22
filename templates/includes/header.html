@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!--    ============FONTS================   -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cec2f278dd.js" crossorigin="anonymous"></script>
+    <!--    ============FONTS================   -->
+
+    <link rel="stylesheet" href="../../media/css/header.css">
+    <link rel="stylesheet" href="../../media/css/image_fullpage.css">
+    <link rel="stylesheet" href="../../media/css/profile.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <div style="display: flex;align-items: center">
+        <a href="/" class="logo">
+            <img src="../../media/static_imgs/logo.png" alt="">
+            <span>Kliks</span>
+        </a>
+        <form action="" class="search-form menu-search">
+            <input type="text" placeholder="Search for free photos" value="{{ key }}">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+    </div>
+    <a href="/profile">
+        <div class="profile-pic" style=""></div>
+    </a>
+    <div class="menu-items">
+        {% if not user.is_authenticated %}
+            <ul>
+                <li><a href="/upload">Upload</a></li>
+                <li><a href="/signup">Signup</a></li>
+            </ul>
+            <form action="/login" method="get">
+                <button type="submit">Login</button>
+            </form>
+
+        {% endif %}
+        {% if user.is_authenticated %}
+            <ul>
+                <li><a href="/upload">Upload</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+            <a href="/profile">
+                <div class="profile-pic"
+                      style="background: url('{{ pp.pp.url }}');background-size: cover">
+
+                </div>
+            </a>
+        {% endif %}
+    </div>
+</nav>
+
+<script>
+    let search_form = document.querySelector(".menu-search")
+
+    search_form.addEventListener('submit', function (e){
+        e.preventDefault();
+        let search_key = document.querySelector('.menu-search input').value;
+        {#var mystring = 'This is a string';#}
+        let newString = search_key.replace(/ /g, "_");
+
+        window.location.href = '/search/' + newString;
+    });
+</script>

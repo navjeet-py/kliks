@@ -1,0 +1,130 @@
+.wrapper2 {
+    width: 90%;
+    margin: 100px auto 0;
+}
+.first {
+    display: flex;
+    justify-content: space-between;
+}
+
+.uploader {
+    display: flex;
+    align-items: center;
+}
+
+.uploader a {
+    text-decoration: none;
+    display: flex;
+}
+
+.uploader a .uploader-pic {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.uploader .name {
+    font-size: 16px;
+    font-family: Rubik;
+    color: rgba(7, 27, 77, 1);
+    padding-left: 15px;
+    margin-top: 4px;
+    font-weight: bolder;
+}
+
+.uploader .followers {
+    font-size: 16px;
+    font-family: "Roboto";
+    color: rgba(7, 27, 77, 0.7);
+    padding-left: 15px;
+    margin-top: 10px;
+}
+
+.follow-button {
+    height: 32px;
+    width: 100px;
+    color: black;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-family: Roboto;
+    margin-left: 40px;
+    outline: none;
+    border: 0.5px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    cursor: pointer;
+
+    background-color: white;
+}
+
+.follow-button:hover, .likes:hover {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.1));
+
+}
+
+.download-like {
+    display: flex;
+    align-items: center;
+}
+
+.likes {
+    height: 43px;
+    width: 140px;
+    font-size: 17px;
+    font-family: "Roboto";
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    background: white;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.likes i {
+    font-size: 20px;
+}
+
+a.download {
+    text-decoration: none;
+    display: inline;
+    color: white;
+}
+
+.download button {
+    font-size: 16px;
+    font-family: "Rubik";
+    font-weight: lighter;
+    cursor: pointer;
+    height: 43px;
+    width: 160px;
+    background-color: rgba(7, 27, 77, 1);
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    margin-left: 15px;
+}
+
+.download button:hover {
+    color: #071b4d;
+    background-color: white;
+    border: 2px solid #071b4d;
+    font-weight: 600;
+}
+
+.download:hover {
+    opacity: 0.9;
+}
+
+.full-img {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.full-img img {
+    height: calc(100vh - 190px);
+    padding: 5px;
+    border: 1px solid rgba(7, 27, 77, 0.7);
+    border-radius: 5px;
+}

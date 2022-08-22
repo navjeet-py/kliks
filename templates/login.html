@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login • Kliks</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../media/css/login.css">
+</head>
+<body>
+
+
+<div class="banner">
+
+</div>
+<div class="logo">
+    <a href="/"><img src="../media/static_imgs/logo.png" alt=""></a>
+</div>
+<div class="signup">
+    <a href="/signup">
+        <span>New to Pexels?</span>
+        <button>Join</button>
+    </a>
+</div>
+
+
+<div class="login-form">
+    <div class="header">Welcome back to Kliks</div>
+    <div class="wrapper">
+        <form action="/login" method="post">{% csrf_token %}
+            <div class="mail-pwd">
+                <input type="text" placeholder="Email" name="email" maxlength="100", value="{{ email }}">
+                <input type="password" placeholder="Password" name="password" maxlength="100">
+            </div>
+
+            {% if isError %}
+                <p class="error">Incorrect email or password.</p>
+                <style>
+                    input{
+                        border-color: red !important;
+                    }
+                </style>
+            {% endif %}
+
+            <button type="submit" class="login-btn" name="login-btn">Login</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="../media/css/image_fullpage.css">
+<title>Image • Kliks</title>
+{% include 'includes/header.html' %}
+
+{#<link rel="stylesheet" href="../media/css/image_fullpage.css">#}
+{#<h3>{{ image_user.email }}</h3>#}
+{#<img src="{{ image.img.url }}" alt="" width="600">#}
+{#<p>{{ image.title }}</p>#}
+
+<div class="wrapper2">
+    <div class="first">
+        <div class="uploader">
+            <a href="/profile/{{ image_user.username }}">
+                <div class="uploader-pic"
+                     style="background: url('{{ image_pp.pp.url }}');background-size: cover;width: 50px;height: 50px">
+                </div>
+                <div>
+                    <p class="name">{{ image_user.first_name }}</p>
+                    <p class="followers"><span class="follower-count">{{ count }}</span> pictures</p>
+                </div>
+            </a>
+        </div>
+        <div class="download-like">
+            <a download class="download" href="{{ image.img.url }}">
+            <button>Free Download</button>
+        </a>
+        </div>
+    </div>
+    <div class="full-img">
+            <img src="{{ image.img.url }}" alt="" >
+    </div>
+</div>
+
+
+</body>
+</html>

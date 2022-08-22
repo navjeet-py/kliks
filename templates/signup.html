@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Join • Kliks</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../media/css/signup.css">
+</head>
+<body>
+
+{#<h1>Sign Up</h1>#}
+{##}
+{#<form action="/signup" method="post">#}
+{#    {% csrf_token %}#}
+{##}
+{#    <label for="email">Email</label>#}
+{#    <input type="text" id="email" name="email" placeholder="Enter your email-id" required>#}
+{#    <hr>#}
+{#    <label for="name">Name</label>#}
+{#    <input type="text" id="name" name="name" placeholder="Enter your name" required>#}
+{#    <hr>#}
+{#    <label for="password">Password</label>#}
+{#    <input type="password" id="password" name="password" placeholder="Enter your password" required>#}
+{##}
+{#    <hr>#}
+{##}
+{#    <button type="submit">Signup</button>#}
+{##}
+{#</form>#}
+
+<div class="banner">
+
+</div>
+<div class="logo">
+    <a href="/"><img src="../media/static_imgs/logo.png" alt=""></a>
+</div>
+<div class="login">
+    <a href="/login">
+        <span>Already using Pexels?</span>
+        <button>Sign in</button>
+    </a>
+
+</div>
+<div class="signup-form">
+    <div class="header">Join Kliks</div>
+    <p class="line">Discover thousands of free photos you can use everywhere.</p>
+    <div class="wrapper">
+        <form action="/signup" method="post"> {% csrf_token %}
+            <div class="mail-pwd">
+                <input type="text" placeholder="Name" name="name" maxlength="100" value="{{ name }}">
+                <input type="text" placeholder="Email" name="email" maxlength="100" class="email" value="{{ email }}">
+                <input type="password" placeholder="Password" name="password" maxlength="100" minlength="6">
+            </div>
+
+            {% if isError %}
+                <p class="error">{{ error }}</p>
+            {% endif %}
+            <div class="checkbox">
+                <input type="checkbox" id="pepe">
+                <label for="pepe">Get the best photos in your inbox</label>
+            </div>
+            <button type="submit" class="signup-btn" name="signup-btn">Sign Up</button>
+        </form>
+        <p class="terms">By joining, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy
+            Policy</a></p>
+    </div>
+
+</div>
+
+
+</body>
+</html>

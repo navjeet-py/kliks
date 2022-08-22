@@ -1,0 +1,40 @@
+
+<link rel="stylesheet" href="../media/css/upload.css">
+<title>Upload • Kliks</title>
+{% include 'includes/header.html' %}
+
+<div class="upload-main">
+    <p class="head">Upload Photos on Kliks</p>
+    <ul>
+        <li>Your uploads will be distributed for free under the Pexels license.</li>
+        <li>To increase the chance of being featured, please ensure that your submissions meet our guidelines.</li>
+        <li>Your content will also be featured in our search.</li>
+    </ul>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label class="image-box">
+            <input type="file" name="image" onchange="loadFile(event)">
+            <div class="button" type="button">Browse</div>
+            &nbsp;&nbsp;or drag and drop
+        </label>
+
+        <input type="text" name="title" placeholder="Enter tags separated by commas" class="title">
+        <img src="" alt="Image Preview" id="output" style="display: none" >
+        <br>
+        <input type="submit" value="Publish" class="submit-btn">
+    </form>
+</div>
+
+<script>
+    let loadFile = function (event) {
+        let image = document.getElementById('output');
+
+        image.src = URL.createObjectURL(event.target.files[0]);
+        image.style.display = 'inline'
+    };
+
+</script>
+
+
+</body>
+</html>

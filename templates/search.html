@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="../media/css/search.css">
+<title>{{ Key }} Pictures • Kliks</title>
+{% include 'includes/header.html' %}
+
+<p class="free-stock-photos">{{ Key }} Pictures ({{ count }})</p>
+
+    {% if count is 0 %}
+
+        <p class="not-found">Sorry, We couldn't find anything for {{ key }}.</p>
+
+
+    {% endif %}
+<section class="img">
+    <div class="row1">
+        {% for img in col1 %}
+            <a href="/image/{{ img.id }}">
+                <img src="{{ img.small_img.url }}" alt="">
+            </a>
+        {% endfor %}
+    </div>
+
+    <div class="row2">
+        {% for img in col2 %}
+            <a href="/image/{{ img.id }}">
+                <img src="{{ img.small_img.url }}" alt="">
+            </a>
+        {% endfor %}
+    </div>
+
+    <div class="row3">
+        {% for img in col3 %}
+            <a href="/image/{{ img.id }}">
+                <img src="{{ img.small_img.url }}" alt="">
+            </a>
+        {% endfor %}
+    </div>
+
+    <div class="row4">
+        {% for img in col4 %}
+            <a href="/image/{{ img.id }}">
+                <img src="{{ img.small_img.url }}" alt="">
+            </a>
+        {% endfor %}
+    </div>
+
+</section>

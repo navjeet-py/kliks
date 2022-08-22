@@ -1,0 +1,83 @@
+<link rel="stylesheet" href="../media/css/index.css">
+<title>Home • Kliks</title>
+{% include "includes/header.html" %}
+
+<section class="head-bg">
+    <div>
+        <h1>The best free stock photos & videos<br>shared by talented creators.</h1>
+        <form action="" class="search-section scroll-check">
+            <input type="text" placeholder="Search for free photos">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+    </div>
+</section>
+
+<p class="free-stock-photos">Free Stock Photos</p>
+<section class="img">
+    <div class="row1">
+        {% for img in col1 %}
+            <a href="image/{{ img.id }}">
+                <img src="{{ img.small_img.url }}" alt="">
+            </a>
+        {% endfor %}
+    </div>
+
+    <div class="row2">
+        {% for img in col2 %}
+            <a href="image/{{ img.id }}">
+                <img src="{{ img.small_img.url }}" alt="">
+            </a>
+        {% endfor %}
+    </div>
+
+    <div class="row3">
+        {% for img in col3 %}
+            <a href="image/{{ img.id }}">
+                <img src="{{ img.small_img.url }}" alt="">
+            </a>
+        {% endfor %}
+    </div>
+
+    <div class="row4">
+        {% for img in col4 %}
+            <a href="image/{{ img.id }}">
+                <img src="{{ img.small_img.url }}" alt="">
+            </a>
+        {% endfor %}
+    </div>
+
+
+</section>
+
+<script>
+
+    const navbar = document.querySelector('.navbar');
+    const menuSearch = document.querySelector('.menu-search');
+    let p = document.querySelector('.scroll-check');
+    navbar.style.background = 'transparent';
+    menuSearch.style.visibility = "hidden";
+
+    window.addEventListener('scroll', function () {
+        let totalOffset = p.getBoundingClientRect().top;
+        if (totalOffset < 30) {
+            navbar.style.background = 'rgba(35,42,52,1)';
+            menuSearch.style.visibility = "visible";
+        } else {
+            navbar.style.background = 'transparent';
+            menuSearch.style.visibility = "hidden";
+        }
+    });
+
+    let big_search = document.querySelector(".scroll-check")
+
+    big_search.addEventListener('submit', function (e){
+        e.preventDefault();
+        let search_key = document.querySelector('.scroll-check input').value;
+        let newString = search_key.replace(/ /g, "_");
+        window.location.href = '/search/' + newString;
+        {#window.location.href = '/search/' + search_key;#}
+    });
+</script>
+
+</body>
+</html>

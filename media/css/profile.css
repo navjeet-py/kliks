@@ -1,0 +1,98 @@
+
+.intro {
+    height: 220px;
+    margin-top: 140px;
+}
+.intro .wrapper {
+    width: 40%;
+    margin: 0 auto;
+}
+.big-profile-pic {
+    display: inline-block;
+    margin-right: 50px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    float: left;
+    margin-top: -10px;
+}
+.intro-name {
+    font-size: 32px;
+    font-family: "Roboto";
+    font-weight: bolder;
+    line-height: 32px;
+}
+.edit-profile {
+    height: 30px;
+    width: 123px;
+    background-color: rgba(7, 27, 77, 1);
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    font-family: Roboto;
+    margin-left: 20px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 300;
+        border: 2px solid #071b4d;
+
+}
+.edit-profile span {
+    line-height: 32px;
+}
+.edit-profile:hover {
+     color: #071b4d;
+    background-color: white;
+    border: 2px solid #071b4d;
+    font-weight: 600;
+}
+.intro-text div {
+    margin-bottom: 20px;
+}
+.insta {
+    text-decoration: none;
+    color: rgba(0,0,0,0.7);
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 20px;
+    display: block;
+    font-weight: 100;
+    cursor: default;
+}
+
+.bio {
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    font-weight: 100;
+
+}
+.others {
+    width: 95%;
+    margin: 0 auto;
+}
+.other-content {
+    margin-top: 30px;
+}
+.row1, .row2, .row3, .row4 {
+    width: calc(25% - 30px);
+    float: left;
+    margin: 0 30px 0 0;
+}
+.row1 img, .row2 img, .row3 img, .row4 img{
+    padding-bottom: 20px;
+    width: 100%;
+    max-width: 100%;
+    cursor: pointer;
+}
+.row1 img:hover, .row2 img:hover, .row3 img:hover, .row4 img:hover{
+    opacity: 0.95;
+}
+.photos{
+    font-size: 20px;
+    color: rgba(35,42,52,1);
+    border-bottom: 1.5px solid rgba(35,42,52,1);
+    display: inline;
+    font-weight: bolder;
+}

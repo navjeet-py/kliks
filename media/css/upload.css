@@ -1,0 +1,111 @@
+.upload-main {
+    width: 55%;
+    margin: 100px auto 0;
+}
+
+.upload-main .head {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 15px;
+}
+
+.upload-main ul {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.upload-main ul li {
+    margin: 15px 0;
+    font-weight: 100;
+    font-size: 16px;
+    color: rgba(7, 27, 77, 0.8);
+}
+
+.upload-main .image-box {
+    width: 100%;
+    border: 2px dashed rgba(51, 69, 101, 0.4);
+    display: inline-block;
+    cursor: pointer;
+    padding: 20px 0;
+    margin: 20px auto;
+    text-align: center;
+    background: rgba(51, 69, 101, 0.05);
+    font-weight: bolder;
+    font-size: 15px;
+
+}
+
+.upload-main .image-box .button {
+    display: inline-block;
+    text-align: center;
+    line-height: 37px;
+    height: 37px;
+    width: 97px;
+    outline: none;
+    border: none;
+    background: #071b4d;
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+    border-radius: 5px;
+}
+.upload-main .image-box:hover {
+    border-color: rgba(7, 27, 77, 1);
+}
+
+.upload-main input[type="file"] {
+    display: none !important;
+}
+
+.upload-main .title {
+    height: 43px;
+    width: 100%;
+    outline: none;
+    padding-left: 20px;
+    border: 1px solid #334565;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    color: rgba(7, 27, 77, 1);
+    font-weight: bolder;
+}
+
+.upload-main .title:focus {
+    box-shadow: 0 0 0 1px #334565 inset;
+}
+
+.upload-main .submit-btn {
+    margin: 30px -30px;
+    position:relative;
+    top:50%;
+    left:50%;
+    height: 40px;
+    width: 100px;
+    outline: none;
+    border: none;
+    background: #071b4d;
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    font-weight: 100;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.upload-main .submit-btn:hover{
+     color: #071b4d;
+    background-color: white;
+    border: 2px solid #071b4d;
+    font-weight: 600;
+}
+
+#output{
+    width: 400px;
+    margin-top: 30px;
+    height: auto;
+    margin-left: calc(50% - 200px);
+    padding: 10px;
+    border: 1px solid rgba(7, 27, 77, 0.7);
+
+}

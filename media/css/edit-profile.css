@@ -1,0 +1,98 @@
+
+.wrapper {
+    margin: 100px auto 0;
+    width: 500px;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 8px;
+    padding: 40px 40px 60px;
+    margin-bottom: 50px;
+}
+.header {
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.updateForm div p{
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px 0 ;
+}
+.updateForm div {
+    margin-bottom: 5px;
+}
+.profilePic input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+.profilePic input {
+    display: inline-block;
+    background: #071b4d;
+    -webkit-user-select: none;
+    color: white;
+    height: 32px;
+    font-family: Roboto;
+    font-size: 15px;
+    line-height: 32px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.profilePic input::before {
+    border-color: black;
+}
+.profilePic input:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+
+.name input,.email input,.bio input,.insta input{
+    height: 40px;
+    width: 100%;
+    border: 2px solid rgba(45,67,34,0.1);
+    border-radius: 3px;
+    outline: none;
+    padding-left: 15px;
+    font-size: 15px;
+    font-family: Roboto;
+}
+.name input:focus,.email input:focus,.bio input:focus,.insta input:focus {
+    border-color: rgba(45,67,32,1);
+}
+.emailSetting label {
+    font-family: "Roboto";
+    font-size: 13px;
+    font-weight: 300;
+    color: rgba(45,67,32,0.7);
+
+}
+.password a, .delete a {
+    color: rgba(45,67,32,0.8);;
+    font-size: 15px;
+    line-height: 40px;
+    font-family: "Roboto";
+    font-weight: bolder;
+}
+.password a:hover, .delete a:hover {
+    color: rgba(45,67,32,1);
+}
+.updateForm button {
+    float: right;
+    display: inline-block;
+    height: 48px;
+    width: 128px;
+    background-color: #071b4d;
+    color: white;
+    font-family: "Roboto";
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.updateForm button:hover {
+    color: #071b4d;
+    background-color: white;
+    border: 2px solid #071b4d;
+    font-weight: 600;
+}
