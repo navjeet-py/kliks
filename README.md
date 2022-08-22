@@ -1,7 +1,7 @@
 # KLIKS
-#### An image sharing site, where user can signup, login, upload pictures, see and search for other’s profiles and pictures and download them.
+**An image sharing site, where user can signup, login, upload pictures, see and search for other’s profiles and pictures and download them.**
 
-#### For the front-end, we used HTML, CSS, and JavaScript. In the backend, Django and an SQL database are used. 
+**For the front-end, we used HTML, CSS, and JavaScript. In the backend, Django and an SQL database are used.**
 
 ### Pages Views
 <p align="center">
