@@ -3,6 +3,7 @@
 
 ### Technologies used - 
 **Front-end:** HTML, CSS, and JavaScript
+
 **Backend:** Django, SQL
 
 ### Pages Views
