@@ -63,7 +63,7 @@ Also, all images will be uniquely identified with an id.
 
 ### How to run at your computer
 1. Download or pull the project directory at your system. 
-2. We must have Python3 installed in your computer.
+2. We must have Python3 installed in our computer.
 3. Set up a python virtual environment in the project folder and install all the libraries in the *requirements.txt* file. We may do it by typing `pip install requirements.txt` in our cmd or terminal.
-4. Ta-da! We're ready to run the server. We'll go to the project directory in our cmd or terminal and type `py manage.py runserver`. Open `localhost:8000` in our web browser.
+4. Ta-da! We're ready to run the server. We'll go to the project directory in our cmd or terminal and type `py manage.py runserver`. Open `localhost:8000` in the web browser.
 5. We have it running now. Create an account, upload pictures, see other's pictures, have fun!
