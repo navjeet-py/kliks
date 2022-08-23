@@ -1,12 +1,22 @@
 # KLIKS
 **An image sharing site, where user can signup, login, upload pictures, see and search for other’s profiles and pictures and download them.**
 
-**For the front-end, we used HTML, CSS, and JavaScript. In the backend, Django and an SQL database are used.**
+### Technologies used - 
+**Front-end:** HTML, CSS, and JavaScript
+**Backend:** Django, SQL
 
 ### Pages Views
 <p align="center">
   <img src="https://raw.githubusercontent.com/navjeet-py/kliks/main/media/landing-page.jpeg" width="350" title="hover text">
   <img src="https://github.com/navjeet-py/kliks/blob/main/media/signup-page.jpeg" width="350" alt="accessibility text">
+</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/navjeet-py/kliks/main/media/upload-page.jpeg" width="350" title="hover text">
+  <img src="https://github.com/navjeet-py/kliks/blob/main/media/imageview-page.jpeg" width="350" alt="accessibility text">
+</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/navjeet-py/kliks/main/media/search-page.jpeg" width="350" title="hover text">
+  <img src="https://github.com/navjeet-py/kliks/blob/main/media/profile-page.jpeg" width="350" alt="accessibility text">
 </p>
 
 
