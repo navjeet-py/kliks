@@ -1,5 +1,5 @@
 # KLIKS
-**An image sharing site, where user can signup, login, upload pictures, see and search for other’s profiles and pictures and download them.**
+**An image sharing site using Django, where user can signup, login, upload pictures, see and search for other people’s profiles and pictures and download them.**
 
 ### Technologies used - 
 **Front-end:** HTML, CSS, and JavaScript
@@ -60,3 +60,6 @@ the uploaded_images folder and the file name along with other pieces of informat
 the image will be saved in the database, which will be used to fetch and display the image later.
 Also, all images will be uniquely identified with an id.
 
+### How to run at your computer
+1. Download or pull the project directory at your system. 
+2. Set up a virtual environment in the project folder and install all the libraries in the *requirements.txt* file. You may use `pip install requirements.txt`.
