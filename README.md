@@ -7,16 +7,16 @@
 
 ### Pages Views
 <p align="center">
-  <img src="https://raw.githubusercontent.com/navjeet-py/kliks/main/media/landing-page.jpeg" width="350" title="hover text">
-  <img src="https://github.com/navjeet-py/kliks/blob/main/media/signup-page.jpeg" width="350" alt="accessibility text">
+  <img src="https://raw.githubusercontent.com/navjeet-py/kliks/main/media/landing-page.jpeg" width="400" title="hover text">
+  <img src="https://github.com/navjeet-py/kliks/blob/main/media/signup-page.jpeg" width="400" alt="accessibility text">
 </p>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/navjeet-py/kliks/main/media/upload-page.jpeg" width="350" title="hover text">
-  <img src="https://github.com/navjeet-py/kliks/blob/main/media/imageview-page.jpeg" width="350" alt="accessibility text">
+  <img src="https://raw.githubusercontent.com/navjeet-py/kliks/main/media/upload-page.jpeg" width="400" title="hover text">
+  <img src="https://github.com/navjeet-py/kliks/blob/main/media/imageview-page.jpeg" width="400" alt="accessibility text">
 </p>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/navjeet-py/kliks/main/media/search-page.jpeg" width="350" title="hover text">
-  <img src="https://github.com/navjeet-py/kliks/blob/main/media/profile-page.jpeg" width="350" alt="accessibility text">
+  <img src="https://raw.githubusercontent.com/navjeet-py/kliks/main/media/search-page.jpeg" width="400" title="hover text">
+  <img src="https://github.com/navjeet-py/kliks/blob/main/media/profile-page.jpeg" width="400" alt="accessibility text">
 </p>
 
 
